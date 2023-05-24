@@ -1,0 +1,58 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background-color:  rgb(26, 24, 24);
+}
+
+ul{
+    margin: auto;
+    width: fit-content;
+    padding: 18% 0;
+}
+ul li{
+
+    padding:1cm;
+    font-size: x-large;
+    background-color:  rgb(26, 24, 24);
+    color: rgba(255, 255, 0, 0.637);  
+}
+ul li input{
+    width: 2.5cm;
+    height: 2cm;
+    font-size: xx-large;
+    border: 2px solid rgba(255, 255, 0, 0.637);
+    background-color: rgb(26, 24, 24);
+    color: rgba(255, 255, 0, 0.637);
+}
+
+ul li input:hover{
+    width: 2.5cm;
+    height: 2cm;
+    font-size: xx-large;
+    border: 2px solid yellow;
+    background-color:rgb(153, 132, 132);
+    color: yellow;
+    text-shadow:0px 0px 5px yellow;
+    box-shadow: 0px 0px 10px yellow;
+}
+ul li input:active{
+    width: 2.5cm;
+    height: 2cm;
+    font-size: xx-large;
+    border: 2px solid yellow;
+    background-color: rgb(153, 132, 132);
+    color: yellow;;
+    color: yellow;
+    text-shadow:0px 0px 5px yellow;
+    box-shadow: 0px 0px 20px yellow;
+}
+
+
+/* Above Tablet */
+@media only screen and (min-width: 1024px) {
+    ul li{
+        display: inline-block;
+    }
+}
+

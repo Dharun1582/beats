@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Beats</title>
+        <link rel="stylesheet" href="beat.css">
+    </head>
+    <body>
+        <ul>
+            <li><input type="button" value="1" id="1" onclick="playbeat('1')"><br>clap</li>
+            <audio id="clap" src="beats\clap.wav"></audio>
+
+            <li><input type="button" value="2" id="2" onclick="playbeat('2')"><br>kick</li>
+            <audio id="kick" src="beats\kick.wav"></audio>
+
+            <li><input type="button" value="3" id="3" onclick="playbeat('3')"><br>openhat</li>
+            <audio id="openhat" src="beats\openhat.wav"></audio>
+
+            <li><input type="button" value="4" id="4" onclick="playbeat('4')"><br>ride</li>
+            <audio id="ride" src="beats\ride.wav"></audio>
+
+            <li><input type="button" value="5" id="5" onclick="playbeat('5')"><br>snare</li>
+            <audio id="snare" src="beats\snare.wav"></audio>
+
+            <li><input type="button" value="6" id="6" onclick="playbeat('6')"><br>tink</li>
+            <audio id="tink" src="beats\tink.wav"></audio>
+
+            <li><input type="button" value="7" id="7" onclick="playbeat('7')"><br>tom</li>
+            <audio id="tom" src="beats\tom.wav"></audio>
+
+            <li><input type="button" value="8" id="8" onclick="playbeat('8')"><br>boom</li>
+            <audio id="boom" src="beats\boom.wav"></audio>
+
+        </ul>
+        <script>
+            var keynum=document.body;
+            keynum.addEventListener('keydown',function(e){
+                    var keyn=e.keyCode;
+                    console.log(keyn);
+                    if(keyn===97 || keyn===49){
+                        var audio=document.getElementById('clap');
+                        audio.play();
+                        document.getElementById('1').style.boxShadow="0px 0px 20px yellow";
+                        document.getElementById('1').style.textShadow="0px 0px 5px yellow";
+                        document.getElementById('1').style.backgroundColor="rgb(153, 132, 132)"
+                    }else if(keyn===98 || keyn===50){
+                        var audio=document.getElementById('kick');
+                        audio.play();
+                        document.getElementById('2').style.boxShadow="0px 0px 20px yellow";
+                        document.getElementById('2').style.textShadow="0px 0px 5px yellow";
+                        document.getElementById('2').style.backgroundColor="rgb(153, 132, 132)"
+                    }else if(keyn===99 || keyn===51){
+                        var audio=document.getElementById('openhat');
+                        audio.play();
+                        document.getElementById('3').style.boxShadow="0px 0px 20px yellow";
+                        document.getElementById('3').style.textShadow="0px 0px 5px yellow";
+                        document.getElementById('3').style.backgroundColor="rgb(153, 132, 132)"
+                    }else if(keyn===100 || keyn===52){
+                        var audio=document.getElementById('ride');
+                        audio.play();
+                        document.getElementById('4').style.boxShadow="0px 0px 20px yellow";
+                        document.getElementById('4').style.textShadow="0px 0px 5px yellow";
+                        document.getElementById('4').style.backgroundColor="rgb(153, 132, 132)"
+                    }else if(keyn===101 || keyn===53){
+                        var audio=document.getElementById('snare');
+                        audio.play();
+                        document.getElementById('5').style.boxShadow="0px 0px 20px yellow";
+                        document.getElementById('5').style.textShadow="0px 0px 5px yellow";
+                        document.getElementById('5').style.backgroundColor="rgb(153, 132, 132)"
+                    }else if(keyn===102 || keyn===54){
+                        var audio=document.getElementById('tink');
+                        audio.play();
+                        document.getElementById('6').style.boxShadow="0px 0px 20px yellow";
+                        document.getElementById('6').style.textShadow="0px 0px 5px yellow";
+                        document.getElementById('6').style.backgroundColor="rgb(153, 132, 132)"
+                    }else if(keyn===103 || keyn===55){
+                        var audio=document.getElementById('tom');
+                        audio.play();
+                        document.getElementById('7').style.boxShadow="0px 0px 20px yellow";
+                        document.getElementById('7').style.textShadow="0px 0px 5px yellow";
+                        document.getElementById('7').style.backgroundColor="rgb(153, 132, 132)"
+                    }else if(keyn===104 || keyn===56){
+                        var audio=document.getElementById('boom');
+                        audio.play();
+                        document.getElementById('8').style.boxShadow="0px 0px 20px yellow";
+                        document.getElementById('8').style.textShadow="0px 0px 5px yellow";
+                        document.getElementById('8').style.backgroundColor="rgb(153, 132, 132)"
+                    }    
+            })
+
+            keynum.addEventListener('keyup',function(e){
+                    var keyn=e.keyCode;
+                    console.log(keyn);
+                    if(keyn===97 || keyn===49){
+                        document.getElementById('1').style.boxShadow="";
+                        document.getElementById('1').style.textShadow="";
+                        document.getElementById('1').style.backgroundColor=""
+                    }else if(keyn===98 || keyn===50){
+                        document.getElementById('2').style.boxShadow="";
+                        document.getElementById('2').style.textShadow="";
+                        document.getElementById('2').style.backgroundColor=""
+                    }else if(keyn===99 || keyn===51){
+                        document.getElementById('3').style.boxShadow="";
+                        document.getElementById('3').style.textShadow="";
+                        document.getElementById('3').style.backgroundColor=""
+                    }else if(keyn===100 || keyn===52){
+                        document.getElementById('4').style.boxShadow="";
+                        document.getElementById('4').style.textShadow="";
+                        document.getElementById('4').style.backgroundColor=""
+                    }else if(keyn===101 || keyn===53){
+                        document.getElementById('5').style.boxShadow="";
+                        document.getElementById('5').style.textShadow="";
+                        document.getElementById('5').style.backgroundColor=""
+                    }else if(keyn===102 || keyn===54){
+                        document.getElementById('6').style.boxShadow="";
+                        document.getElementById('6').style.textShadow="";
+                        document.getElementById('6').style.backgroundColor=""
+                    }else if(keyn===103 || keyn===55){
+                        document.getElementById('7').style.boxShadow="";
+                        document.getElementById('7').style.textShadow="";
+                        document.getElementById('7').style.backgroundColor=""
+                    }else if(keyn===104 || keyn===56){
+                        document.getElementById('8').style.boxShadow="";
+                        document.getElementById('8').style.textShadow="";
+                        document.getElementById('8').style.backgroundColor=""
+                    }    
+            })
+
+            function playbeat(id){
+
+                if(id==='1'){
+                    var audio=document.getElementById('clap');
+                    audio.play();
+                }else if(id==='2'){
+                    var audio=document.getElementById('kick');
+                    audio.play();
+                }else if(id==='3'){
+                    var audio=document.getElementById('openhat');
+                    audio.play();
+                }else if(id==='4'){
+                    var audio=document.getElementById('ride');
+                    audio.play();
+                }else if(id==='5'){
+                    var audio=document.getElementById('snare');
+                    audio.play();
+                }else if(id==='6'){
+                    var audio=document.getElementById('tink');
+                    audio.play();
+                }else if(id==='7'){
+                    var audio=document.getElementById('tom');
+                    audio.play();
+                }else if(id==='8'){
+                    var audio=document.getElementById('boom');
+                    audio.play();
+                }
+            }
+        </script>
+    </body>
+</html>
